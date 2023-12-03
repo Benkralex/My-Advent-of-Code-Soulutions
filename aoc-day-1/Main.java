@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         List<String> input = new ArrayList<String>();
         try {
-            File datei = new File("C:/Users/Admin/Documents/GitHub/aoc-day1/src/main/java/de/benkralex/input.txt");
+            File datei = new File("input.txt");
             System.out.println(datei.getAbsolutePath());
             Scanner scanner = new Scanner(datei);
             while (scanner.hasNext()) {
