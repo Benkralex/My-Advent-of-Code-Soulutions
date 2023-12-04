@@ -27,7 +27,7 @@ public class Main {
             scanner = new Scanner(datei);
             x = 0;
             String num = "";
-            int soulutionpart1 = 0;
+            int solutionpart1 = 0;
             while (scanner.hasNextLine()) {
                 boolean nearBy = false;
                 int y = 0;
@@ -46,7 +46,7 @@ public class Main {
                     } else {
                         if (nearBy) {
                             System.out.println(num);
-                            soulutionpart1 += Integer.parseInt(num);
+                            solutionpart1 += Integer.parseInt(num);
                         }
                         nearBy = false;
                         num = "";
@@ -55,13 +55,13 @@ public class Main {
                 }
                 if (nearBy) {
                     System.out.println(num);
-                    soulutionpart1 += Integer.parseInt(num);
+                    solutionpart1 += Integer.parseInt(num);
                 }
                 nearBy = false;
                 num = "";
                 x++;
             }
-            System.out.println(soulutionpart1);
+            System.out.println(solutionpart1);
         } catch (Exception e) {
             System.out.println(e);
         }

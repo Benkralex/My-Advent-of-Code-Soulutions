@@ -27,7 +27,7 @@ public class Main {
             scanner = new Scanner(datei);
             x = 0;
             String num = "";
-            int soulutionpart2 = 0;
+            int solutionpart2 = 0;
             List<Coordinats> symbolspart2 = new ArrayList<>();
             while (scanner.hasNextLine()) {
                 boolean nearBy = false;
@@ -71,10 +71,10 @@ public class Main {
 
             for (Coordinats symbol : symbols) {
                 if (symbol.intNearBy.size() == 2) {
-                    soulutionpart2 += symbol.intNearBy.get(0) * symbol.intNearBy.get(1);
+                    solutionpart2 += symbol.intNearBy.get(0) * symbol.intNearBy.get(1);
                 }
             }
-            System.out.println(soulutionpart2);
+            System.out.println(solutionpart2);
         } catch (Exception e) {
             System.out.println(e);
         }

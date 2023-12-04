@@ -20,8 +20,8 @@ public class Main {
         }
         ///
         ///
-        int soulutionpart1 = 0;
-        int soulutionpart2 = 0;
+        int solutionpart1 = 0;
+        int solutionpart2 = 0;
         for (String s : input) {
             int minred = 0;
             int minblue = 0;
@@ -66,11 +66,11 @@ public class Main {
             if (possible) {
                 String gamenum = game.replace("Game", "");
                 gamenum = gamenum.replace(" ", "");
-                soulutionpart1 += Integer.parseInt(gamenum);
+                solutionpart1 += Integer.parseInt(gamenum);
             }
-            soulutionpart2 += (minred * minblue * mingreen);
+            solutionpart2 += (minred * minblue * mingreen);
         }
-        System.out.println("Part 1: " + soulutionpart1);
-        System.out.println("Part 2: " + soulutionpart2);
+        System.out.println("Part 1: " + solutionpart1);
+        System.out.println("Part 2: " + solutionpart2);
     }
 }

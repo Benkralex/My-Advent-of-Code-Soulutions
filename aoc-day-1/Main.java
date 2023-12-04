@@ -24,8 +24,8 @@ public class Main {
         int x = 0;
         int e1 = 0;
         int x1 = 0;
-        int soulutionpart1 = 0;
-        int soulutionpart2 = 0;
+        int solutionpart1 = 0;
+        int solutionpart2 = 0;
         for (String s : input) {
             e = 0;
             x = 0;
@@ -58,10 +58,10 @@ public class Main {
             }
             e1 = e1 + x1;
             e = e + x;
-            soulutionpart2 += e1;
-            soulutionpart1 += e;
+            solutionpart2 += e1;
+            solutionpart1 += e;
         }
-        System.out.println("Part 1: " + soulutionpart1);
-        System.out.println("Part 2: " + soulutionpart2);
+        System.out.println("Part 1: " + solutionpart1);
+        System.out.println("Part 2: " + solutionpart2);
     }
 }
